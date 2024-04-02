@@ -1,0 +1,265 @@
+body {
+    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    /* margin is necessary so you won't get white lines around your page */
+    text-transform: capitalize;
+    background: linear-gradient(rgba(20, 20, 67, 0.7), rgba(11, 20, 59, 0.451));
+
+}
+
+
+
+
+
+/* font sizes on desktop */
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 25px;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+h6 {
+    font-size: 15px;
+}
+
+/* I have put the site cotent into a <div class="main-content"></div> to give padding to the full website content
+and avoid it overlapping with the sidebar  */
+
+.main-content {
+    text-align: center;
+}
+
+
+
+
+/* global properties */
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(7, 54, 42, 0.452);
+}
+
+header ul {
+    display: flex;
+    margin: auto;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+header ul li {
+    margin: 5px 10px;
+    list-style: none;
+}
+
+/* local properties */
+
+/* navigation links properties */
+
+header .nav-li {
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.253);
+    border-radius: 10px;
+    padding: 10px 50px;
+}
+
+header .nav-li a {
+    transition: 0.5s;
+}
+
+header .nav-li a:hover {
+    text-shadow: 1px 1px 1px black;
+    color: rgb(27, 209, 163);
+}
+
+/* social icons properties */
+
+/* social links ul */
+
+header .social {
+    margin-left: -6.5%;
+}
+
+header .social li {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.253);
+    border-radius: 10px;
+    transition: .5s;
+    padding: 10px 10px;
+}
+
+header .social-header-facebook:hover {
+    color: white;
+    background-color: rgba(22, 76, 177, 0.995);
+}
+
+header .social-header-instagram:hover {
+    color: white;
+    background-color: rgb(224, 61, 167);
+}
+
+
+header .social-header-twitter:hover {
+    color: white;
+    background-color: rgb(31, 191, 203);
+}
+
+/* sidebar */
+
+aside {
+    display: none;
+    position: fixed;
+    margin-right: 1%;
+    /* margin-right pushes the text away a little so it doesn't look like it's glued the sidebar */
+    width: 15vw;
+    height: 100vw;
+    top: 10vh;
+    background: rgba(137, 16, 16, 0.573);
+}
+
+.xmark,
+.bars {
+    display: none;
+}
+
+
+aside .side-nav-models {
+    list-style: none;
+    padding: 10px;
+    margin-left: -1%;
+}
+
+aside .side-nav a {
+    display: block;
+    height: 100%;
+    text-decoration: none;
+}
+
+aside .social-side-nav {
+    display: inline-block;
+}
+
+/* sections */
+
+/* author section */
+
+.the-author {
+    background-image: linear-gradient(rgba(20, 20, 67, 0.7), rgba(11, 20, 59, 0.451)), url("../imgs/hero-bg.jpg");
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    padding-top: 150px;
+}
+
+.the-author h1 {
+    color: rgb(27, 209, 163);
+}
+
+.the-author p {
+    color: rgb(27, 209, 163);
+    font-size: 20px;
+}
+
+/* place of birth section */
+
+.place-of-birth {
+    background-image: linear-gradient(rgba(20, 20, 67, 0.7), rgba(11, 20, 59, 0.451)), url("../imgs/birth.jpg");
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    padding-top: 150px;
+}
+
+.place-of-birth h1 {
+    color: rgb(27, 209, 163);
+}
+
+.place-of-birth p {
+    color: rgb(27, 209, 163);
+    font-size: 20px;
+}
+
+/* qualifications section */
+
+.qualifications {
+    background-image: linear-gradient(rgba(20, 20, 67, 0.7), rgba(11, 20, 59, 0.451)), url("../imgs/qualifications.jpg");
+    background-size: cover;
+    height: 100vh;
+    padding-top: 150px;
+    text-align: center;
+}
+
+.qualifications h1 {
+    color: rgb(27, 209, 163);
+}
+
+.qualifications p {
+    color: rgb(27, 209, 163);
+    font-size: 20px;
+}
+
+/* age section */
+
+.age {
+    background-image: linear-gradient(rgba(20, 20, 67, 0.7), rgba(11, 20, 59, 0.451)), url('../imgs/age.jpg');
+    background-size: cover;
+    text-align: center;
+    height: 100vh;
+    padding: 150px;
+}
+
+.age h1 {
+    color: rgb(27, 209, 163);
+}
+
+.age p {
+    color: rgb(27, 209, 163);
+    font-size: 20px;
+
+}
+
+/* mobile screens configurations: ranging from sub 700px width to 1100px width */
+@media (min-width: 0px) and (max-width: 336px) {
+
+    .wrapper {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        word-break: keep-all;
+        /* word break keep-all is used to break long lines so they don't overflow
+        without breaking words */
+    }
+
+    aside .side-nav-models {
+        position: relative;
+        right: 25px;
+    }
+
+    aside .social-side-nav-facebook,
+    .social-side-nav-instagram,
+    .social-side-nav-twitter {
+        position: relative;
+        right: 27px;
+        margin-left: 6%;
+        width: 15%;
+    }
+}

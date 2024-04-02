@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="this is my first css project">
+    <!-- content is related to the description attribute in the name element, as it's the content of the description by definition -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home v1.0</title>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet"> -->
+    <!-- this is used for garamond font but I'm not using it right now -->
+    <script src="https://kit.fontawesome.com/0f471979b7.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/js.js"></script>
+    <!-- script tag is just like link tag, script is used to call a js file that adds functionality for your html -->
+    <link rel="stylesheet" href="css/cs.css">
+    <!-- this is an external style command it's dependant on another css file -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;1,200;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;1,200;1,400;1,500;1,700&display=swap');
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <ul class="social-icons">
+                <li class="social-header-facebook"><a href=""><i class="fa-brands fa-facebook fa-xl"></i></a>
+                </li>
+                <li class="social-header-instagram"><a href=""><i class="fa-brands fa-instagram fa-xl"></i></a>
+                </li>
+                <li class="social-header-twitter"><a href=""><i class="fa-brands fa-twitter fa-xl"></i></a></li>
+
+            </ul>
+            <div>
+                <ul class="nav-links">
+                    <li class="nav-li"><a href="#">Home</a></li>
+                    <li class="nav-li"><a href="#">Policy</a></li>
+                    <li class="nav-li"><a href="#">About</a></li>
+                    <li class="nav-li"><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </header>
+
+    <div class="side-menu">
+        <i class="fa-solid fa-bars" onclick="showmenu ()"></i>
+    </div>
+    <!-- this is for phone burger menu -->
+    <aside class="hello" id="hello">
+
+        <div class="aside-nav">
+            <ul class="side-nav">
+                <li class="side-nav-links"><a href="#">Home</a></li>
+                <li class="side-nav-links"><a href="#">About</a></li>
+                <li class="side-nav-links"><a href="#">Policy</a></li>
+                <li class="side-nav-links"><a href="#">Contact</a></li>
+            </ul>
+            <ul class="side-social-icons">
+                <li class="side-social-nav-facebook"><a href="#"><i class="fa-brands fa-facebook fa-xl"></i></a>
+                </li>
+                <li class="side-social-nav-instagram"><a href="#"><i class="fa-brands fa-instagram fa-xl"></i></a>
+                </li>
+                <li class="side-social-nav-twitter"><a href="#"><i class="fa-brands fa-twitter fa-xl"></i></a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="xmark">
+            <i class="fa-solid fa-xmark" onclick="hidemenu ()"></i>
+        </div>
+        <!-- this is for phone burger menu -->
+    </aside>
+
+    <!-- I've put xmark in the sidebar and the menu icon outside the side bar because that's their position on the website, i want the bar to be hidden when
+    the side bar is shown and vice versa -->
+
+    <section class="the-author">
+        <h1>lorem</h1>
+        <p>a begginer front web developer.</p>
+
+    </section>
+    <section class="place-of-birth">
+        <h1>lorem</h1>
+        <p>in a hospital, duh!</p>
+    </section>
+    <section class="qualifications">
+        <h1>lorem</h1>
+        <p>in html, css and java script.</p>
+    </section>
+    <section class="age">
+        <h1>lorem</h1>
+        <p>21 years old.</p>
+    </section>
+
+    <script src="js/js.js"></script>
+</body>
+
+</html>

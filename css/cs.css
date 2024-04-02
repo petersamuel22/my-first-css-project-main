@@ -1,0 +1,349 @@
+/* my reset */
+
+*:first-child {
+  margin-top: 0;
+}
+
+*:last-child {
+  margin-bottom: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit; }
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.3;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* the end of my reset */
+
+body {
+  overflow-x: hidden;
+}
+
+/* font sizes on desktop */
+
+h1 {
+  font-size: 10rem;
+}
+
+h2 {
+  font-size: 7rem;
+}
+
+h3 {
+  font-size: 5rem;
+}
+
+p {
+  font-size: 2.5rem;
+  color: rgb(27, 209, 163);
+}
+
+a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: white;
+}
+
+li {
+  list-style: none;
+}
+
+/* global properties */
+
+header {
+  position: fixed;
+  width: 100%;
+  background-color: #0a15135e;
+  padding: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container ul {
+  display: flex;
+}
+
+header .nav-links {
+  gap: 1vw;
+}
+
+header .nav-links li {
+  color: rgb(255, 255, 255);
+  background-color: #ffffff3e;
+  border-radius: 0.75vw;
+  padding: 1.5vh 3vw;
+}
+
+header .nav-links li a {
+  transition: 0.5s;
+}
+
+header .nav-links li a:hover {
+  text-shadow: 1px 1px 1px black;
+  color: rgb(27, 209, 163);
+}
+
+header .social-icons {
+  gap: 1vw;
+}
+
+header .social-icons li {
+  color: rgb(255, 255, 255);
+  background-color: #ffffff3e;
+  border-radius: 0.75vw;
+  transition: 0.5s;
+  padding: 1.5vh 3vw;
+}
+
+header .social-icons .social-header-facebook:hover {
+  color: white;
+  background-color: rgba(22, 76, 177, 0.995);
+}
+
+header .social-icons .social-header-instagram:hover {
+  color: white;
+  background-color: rgb(224, 61, 167);
+}
+
+header .social-icons .social-header-twitter:hover {
+  color: white;
+  background-color: rgb(31, 191, 203);
+}
+
+/* sidebar for mobiles */
+
+aside {
+  display: none;
+}
+
+.xmark,
+.side-menu {
+  display: none;
+}
+
+/* sections */
+
+/* author section */
+
+.the-author {
+  background-image: linear-gradient(
+      rgba(20, 20, 67, 0.7),
+      rgba(11, 20, 59, 0.451)
+    ),
+    url("../imgs/hero-bg.jpg");
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+  padding-top: 150px;
+}
+
+.the-author h1 {
+  color: rgb(27, 209, 163);
+}
+
+/* place of birth section */
+
+.place-of-birth {
+  background-image: linear-gradient(
+      rgba(20, 20, 67, 0.7),
+      rgba(11, 20, 59, 0.451)
+    ),
+    url("../imgs/birth.jpg");
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+  padding-top: 150px;
+}
+
+.place-of-birth h1 {
+  color: rgb(27, 209, 163);
+}
+
+/* qualifications section */
+
+.qualifications {
+  background-image: linear-gradient(
+      rgba(20, 20, 67, 0.7),
+      rgba(11, 20, 59, 0.451)
+    ),
+    url("../imgs/qualifications.jpg");
+  background-size: cover;
+  height: 100vh;
+  padding-top: 150px;
+  text-align: center;
+}
+
+.qualifications h1 {
+  color: rgb(27, 209, 163);
+}
+
+/* age section */
+
+.age {
+  background-image: linear-gradient(
+      rgba(20, 20, 67, 0.7),
+      rgba(11, 20, 59, 0.451)
+    ),
+    url("../imgs/age.jpg");
+  background-size: cover;
+  text-align: center;
+  height: 100vh;
+  padding: 150px;
+}
+
+.age h1 {
+  color: rgb(27, 209, 163);
+}
+
+@media (max-width: 800px) {
+  header {
+    display: none;
+  }
+
+  .hello {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 45vw;
+    height: 100vh;
+    right: -100vw;
+    background: rgb(80, 104, 117);
+    transition-duration: 0.75s;
+  }
+
+  .side-menu {
+    display: block;
+    color: white;
+    position: fixed;
+    top: 2vh;
+    right: 5vw;
+    cursor: pointer;
+  }
+
+  .xmark {
+    display: block;
+    color: white;
+    position: absolute;
+    top: 2vh;
+    right: 5vw;
+    cursor: pointer;
+  }
+
+  .side-nav {
+    margin: 2vh 0vw 0vh 5vw;
+  }
+
+  aside .side-nav-links {
+    list-style: none;
+    padding: 10px;
+    margin: 5vh 0vw 0vh 0vw;
+    transition: 0.5s;
+  }
+
+  aside .side-nav-links a:hover {
+    color: rgb(27, 209, 163);
+  }
+
+  aside a:hover {
+    text-shadow: 1px 1px 1px black;
+  }
+
+  .side-social-icons {
+    margin: 5vh 4vw 0vh 0vw;
+    display: inline-flex;
+  }
+
+  .side-social-nav-facebook,
+  .side-social-nav-instagram,
+  .side-social-nav-twitter {
+    padding: 6px;
+  }
+
+  .side-social-nav-facebook:hover {
+    color: rgba(245, 245, 245, 0.995);
+    background-color: rgba(22, 76, 177, 0.995);
+  }
+
+  .side-social-nav-instagram:hover {
+    color: white;
+    background-color: rgb(224, 61, 167);
+  }
+
+  .side-social-nav-twitter:hover {
+    color: rgb(9, 108, 108);
+    background-color: rgb(31, 191, 203);
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+}
